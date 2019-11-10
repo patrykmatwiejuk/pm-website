@@ -1,0 +1,101 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+body {
+    display:flex;
+    width:100%;
+    background:yellow;
+    flex-direction: row-reverse;
+}
+
+.header {
+    display:flex;
+    width:50%;
+    height:100vh;
+    background:white;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-right:10rem;
+}
+.navbar ul {
+    display:flex;
+    flex-direction:row;
+    list-style: none;
+}
+
+.navbar ul a {
+    /*border:1px solid black;*/
+    margin:1rem;
+}
+.navbar ul a li {
+    padding:5px 10px;
+
+}
+
+.navblue {
+    background: #2400FF;
+    color:white;
+}
+
+a:link,
+a:visited {
+    color:black;
+    text-decoration: none;
+}
+
+.main {
+    display:flex;
+    width:50%;
+    height:100vh;
+    background:white;
+    align-items: center;
+    justify-content: center;
+}
+
+.photobox {
+    height:695.65px;
+    width:500px;
+    background-image: url(/img/2.jpg);
+    background-size: cover;
+    background-position: center center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+    color:white;
+}
+
+.photobox-footer {
+    height:3.5rem;
+    width:100%;
+    background:#2400FF;
+    position: absolute;
+    bottom:0;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content: space-between;
+}
+.photobox-footer a {
+    color:white;
+}
+
+.photobox-footer p:first-child {
+    margin-left:1rem;
+    font-size:20px;
+}
+.photobox-footer p:last-child {
+    margin-right:1rem;
+    font-size:36px;
+}
