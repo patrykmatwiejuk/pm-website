@@ -15,11 +15,10 @@ body {
 
 .header {
     display:flex;
-    width:50%;
     height:100vh;
-    background:white;
-    align-items: center;
-    justify-content: center;
+    width:50%;
+    align-items:center;
+    justify-content: center;;
 }
 
 .navbar {
@@ -61,11 +60,14 @@ a:visited {
     background:white;
     align-items: center;
     justify-content: center;
+    position:fixed;
+    left:0;
+    top:0;
 }
 
 .photobox {
-    height:695.65px;
-    width:500px;
+    height:495.65px;
+    width:300px;
     background-image: url(/img/2.jpg);
     background-size: cover;
     background-position: center center;
@@ -93,9 +95,26 @@ a:visited {
 
 .photobox-footer p:first-child {
     margin-left:1rem;
-    font-size:20px;
+    font-size:12px;
 }
 .photobox-footer p:last-child {
     margin-right:1rem;
-    font-size:36px;
+    font-size:24px;
+}
+
+.contentbox {
+    display:flex;
+    width:50%;
+    height:400vh;
+    background:white;
+    align-items: center;
+    justify-content: center;
+    overflow:auto;
+    flex-direction: column;
+}
+
+.aboutmebox {
+    height:100vh;
+    width:100%;
+    background:green;    
 }
