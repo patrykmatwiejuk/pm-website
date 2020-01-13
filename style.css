@@ -3,7 +3,7 @@
     padding:0;
     box-sizing:border-box;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 body {
@@ -16,16 +16,16 @@ body {
 .header {
     display:flex;
     height:100vh;
-    width:50%;
+    width:100%;
     align-items:center;
-    justify-content: center;;
+    justify-content: center;
+    background:lightgray;
 }
 
 .navbar {
     display:flex;
     align-items: center;
     justify-content: center;
-    margin-right:10rem;
 }
 .navbar ul {
     display:flex;
@@ -39,7 +39,6 @@ body {
 }
 .navbar ul a li {
     padding:5px 10px;
-
 }
 
 .navblue {
@@ -66,8 +65,8 @@ a:visited {
 }
 
 .photobox {
-    height:495.65px;
-    width:300px;
+    height:695.65px;
+    width:500px;
     background-image: url(/img/2.jpg);
     background-size: cover;
     background-position: center center;
@@ -76,6 +75,7 @@ a:visited {
     justify-content:center;
     position:relative;
     color:white;
+    box-shadow: 10px 10px 30px rgb(0, 0, 0);
 }
 
 .photobox-footer {
@@ -95,11 +95,11 @@ a:visited {
 
 .photobox-footer p:first-child {
     margin-left:1rem;
-    font-size:12px;
+    font-size:16px;
 }
 .photobox-footer p:last-child {
     margin-right:1rem;
-    font-size:24px;
+    font-size:32px;
 }
 
 .contentbox {
@@ -116,5 +116,55 @@ a:visited {
 .aboutmebox {
     height:100vh;
     width:100%;
-    background:green;    
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+
+}
+
+.aboutmebox p {
+    margin-top:2rem;
+    line-height: 20px;
+    align-self:flex-start;
+}
+
+.readmore {
+    padding-top:4rem;
+    display:flex;
+    align-self:flex-end;
+    justify-content: center;
+    margin-right:5rem;
+}
+.readmore a {
+    color:white;
+    padding:2px 13px;
+}
+
+.semibold {
+    font-weight:700;
+}
+
+.regular {
+    font-weight: 400;
+}
+
+.wtbox {
+    height:100vh;
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+}
+
+.wtbox p {
+    margin-top:2rem;
+    line-height: 20px;
+    align-self:flex-start;
+}
+
+.resbox {
+    height:100vh;
+    width:100%;
 }
