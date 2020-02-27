@@ -1,50 +1,29 @@
 * {
     margin:0;
     padding:0;
-    box-sizing:border-box;
+    box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
 }
 
-body {
-    display:flex;
-    width:100%;
-    background:yellow;
-    flex-direction: row-reverse;
+html {
+    scroll-behavior: smooth;
+    overflow-y: hidden;
 }
 
-.header {
-    display:flex;
-    height:100vh;
-    width:100%;
-    align-items:center;
-    justify-content: center;
-    background:lightgray;
-}
-
-.navbar {
-    display:flex;
-    align-items: center;
-    justify-content: center;
-}
-.navbar ul {
-    display:flex;
-    flex-direction:row;
-    list-style: none;
-}
-
-.navbar ul a {
-    /*border:1px solid black;*/
-    margin:1rem;
-}
-.navbar ul a li {
-    padding:5px 10px;
-}
+/* COLORS */
 
 .navblue {
-    background: #2400FF;
+    background:#2400FF;
+}
+
+.whitetext {
     color:white;
 }
+
+/* COLORS */
+
+/* LINKS */
 
 a:link,
 a:visited {
@@ -52,119 +31,237 @@ a:visited {
     text-decoration: none;
 }
 
-.main {
+/* LINKS */
+
+
+/* MAIN WRAPPER */
+
+    .wrapper {
+        
+    }
+
+/* MAIN WRAPPER */
+
+.boxcontainer {
     display:flex;
-    width:50%;
-    height:100vh;
-    background:white;
+    height:300vh;
+}
+
+/* LEFTBOX */
+
+.leftbox {
+    display:flex;
+    width:50vw;
+    flex:1;
+    background:grey;
+    align-items:flex-start;
+    justify-content:center;
+}
+
+.photobox-container {
+    height: 100vh;
+    width: 50vw;
+    display: flex;
     align-items: center;
     justify-content: center;
-    position:fixed;
-    left:0;
+    position: sticky;
+    position: -webkit-sticky;
     top:0;
+    background: pink;
 }
 
 .photobox {
-    height:695.65px;
-    width:500px;
-    background-image: url(/img/2.jpg);
+    background-image: url("img/2.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center center;
+    height: 646px;
+    width:464px;
+    position:relative;
+}
+.photobox-footer {
+    position:absolute;
+    left:0;
+    bottom:0;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    background: #2400FF;
+    height:3rem;
+    width:100%;
+    color:white;
+}
+
+.photobox-footer a {
+    margin-right:1rem;
+    font-size:1.5rem;
+}
+
+.photobox-footer p {
+    margin-left:1rem;
+}
+
+
+
+/* LEFTBOX */
+
+
+/* RIGHTBOX */
+.rightbox {
+    display:flex;
+    width:50vw;
+    align-items:flex-start;
+    flex:1;
+    flex-direction: column;
+    }
+
+    .nav-container {
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+        height:100vh;
+        background:paleturquoise;
+        width:100%;
+    }
+
+    .navbar {
+        display:flex;
+        height:2rem;
+    }
+    .nav-container h1 {
+        font-family: 'Anton' sans-serif;
+        font-weight:700;
+        font-size:5rem;
+        opacity:0.5;
+    }
+
+    .nav-container .readmore {
+        position:absolute;
+        bottom:4rem;
+    }
+
+    .navbar ul {
+        color:black;
+        list-style: none;
+        display:flex;
+        flex-direction: row;
+        align-items:center;
+        justify-content: center;
+    }
+
+    .navbar ul a li {
+        padding:0.1rem 0.6rem;
+    }
+
+    .navbar ul a {
+        color:black;
+        margin-right:2rem;
+    }
+
+    .aboutmebox {
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        height:100vh;
+        background:gray;
+        width:100%;
+        flex-direction: column;
+    }
+
+    .wtbox {
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        height:100vh;
+        background:lightcoral;
+        width:100%;
+        flex-direction: column;
+    }
+
+    .wtbox p {
+        width:80%;
+    }
+
+    .readmore {
+        display:flex;
+        align-self: center;
+        justify-content: center;
+        margin-top:4rem;
+        font-size:2rem;
+    }
+
+/* RIGHTBOX */
+
+/* RESUME */
+.resume-container {
+    height:300vh;
+    background:yellowgreen;
+    width:100%;
+}
+
+
+
+
+/* RESUME */
+
+
+
+.social-navi {
+    display:flex;
+    height:5rem;
+    background:red;
+    flex-direction: row;
+    position:sticky;
+    position:-webkit-sticky;
+    top:0;
+}
+
+.gil {
+    display:flex;
+    margin-right:auto;
+    align-items:center;
+    justify-content: center;
+}
+.gil a {
+    font-size: 2rem;
+    margin:0 0.5rem 0 0.5rem;
+}
+
+.navi {
     display:flex;
     align-items:center;
     justify-content:center;
-    position:relative;
-    color:white;
-    box-shadow: 10px 10px 30px rgb(0, 0, 0);
 }
 
-.photobox-footer {
-    height:3.5rem;
-    width:100%;
-    background:#2400FF;
-    position: absolute;
-    bottom:0;
+.navi ul {
     display:flex;
-    flex-direction:row;
-    align-items:center;
-    justify-content: space-between;
+    flex-direction: row;
+    list-style:none;
 }
-.photobox-footer a {
-    color:white;
-}
-
-.photobox-footer p:first-child {
-    margin-left:1rem;
-    font-size:16px;
-}
-.photobox-footer p:last-child {
+.navi ul a {
     margin-right:1rem;
-    font-size:32px;
 }
 
-.contentbox {
-    display:flex;
-    width:50%;
-    height:400vh;
-    background:white;
-    align-items: center;
-    justify-content: center;
-    overflow:auto;
-    flex-direction: column;
+.resumebox h2 {
+    margin-left:2rem;
+    margin-top:4rem;
 }
-
-.aboutmebox {
-    height:100vh;
-    width:100%;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction:column;
-
-}
-
-.aboutmebox p {
+.resumebox h1 {
     margin-top:2rem;
-    line-height: 20px;
-    align-self:flex-start;
+    margin-left:2rem;
+}
+.resumebox .userstories {
+    margin-left:2rem;
+}
+.userstories {
+    margin-top:1rem;
+    line-height:2;
+    font-size:22px;
 }
 
-.readmore {
-    padding-top:4rem;
-    display:flex;
-    align-self:flex-end;
-    justify-content: center;
-    margin-right:5rem;
-}
-.readmore a {
-    color:white;
-    padding:2px 13px;
-}
-
-.semibold {
+.bold {
     font-weight:700;
 }
 
-.regular {
-    font-weight: 400;
-}
-
-.wtbox {
-    height:100vh;
-    width:100%;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction:column;
-}
-
-.wtbox p {
-    margin-top:2rem;
-    line-height: 20px;
-    align-self:flex-start;
-}
-
-.resbox {
-    height:100vh;
-    width:100%;
-}
+/* RESUME */
